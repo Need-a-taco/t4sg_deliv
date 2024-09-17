@@ -29,7 +29,7 @@ export default async function SpeciesList() {
         <AddSpeciesDialog userId={sessionId} />
       </div>
       <Separator className="my-4" />
-      <div className="flex flex-wrap justify-center">
+      <div className="z-1 flex flex-wrap justify-center">
         {species?.map((species) => <SpeciesCard key={species.id} species={species} />)}
       </div>
     </>
